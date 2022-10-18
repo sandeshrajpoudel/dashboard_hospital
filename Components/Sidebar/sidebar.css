@@ -1,0 +1,141 @@
+    .sidebar {
+  display: flex;
+  width: 100%;
+  background-color: aqua;
+  background-color: #3c6156e0;
+  height: 97vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-between;
+  padding: .2rem;  
+  
+}
+.top {
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+  height: 4rem;
+  width: 100%;
+  justify-content: center;
+  align-items: left;
+  gap: .5rem;
+  margin: .5rem 0 1rem 0
+
+}
+.top > span{
+justify-content: center;
+line-height: 40px;
+}
+
+.top>img{
+  height: 2rem;
+width: 4rem;
+justify-content: baseline;
+  align-items: center;
+border-radius: .5rem;
+
+}
+.menu{
+    display: flex;
+    width: 100%;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+li{
+  display: flex;
+  width: 98%;
+  font-size: 22px;
+  height: 2.3rem;
+  gap: 1rem;
+  cursor: pointer;
+  align-items: center;
+  padding: 0 1rem ;
+  margin: .5rem 0;
+
+}
+li:hover{
+  background-color: var(--gray);
+  cursor: pointer;
+  border-radius: 0px .5rem .5rem 0px;
+}
+.active{
+  background: var(--gray);
+  /*margin-left: .8rem;  marginleft of .menuitem = 1 rem & border of .ative =.2 rem ===(1 - 0.2= .8rem) */
+  border-radius: 0px .5rem .5rem 0px;
+  cursor: pointer;
+}
+
+li > span{
+font-size: 16px;
+font-weight: bold;
+padding: .3rem;
+
+}
+.bottom{
+  display: flex;
+  height: 2.3rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  gap : 1rem;
+margin: 0 0 1rem 0;
+}
+.bottom > span{
+  display: flex;
+font-size: 16px;
+font-weight: bold;
+padding: .3rem;
+
+}
+.bottom:hover{
+  background-color: var(--gray);
+  cursor: pointer;
+  border-radius: 0px .5rem .5rem 0px;
+}
+
+.hamburger{display: none;}
+@media screen and (max-width: 1250px){
+ .top>span{
+  display: none;
+ }
+ .top>img{
+  width: 100%;
+ }
+ li>span{
+  display: none;
+ }
+ .bottom>span{
+  display: none;
+ }
+  
+}
+@media screen and (max-width: 650px){
+  .sidebar{
+    position: fixed;
+    z-index: 8;
+    width: 35%;
+  }
+  
+  .top>span{
+    display: flex;
+   }
+   li>span{
+    display: block;
+    width: 100%;
+   }
+   .bottom>span{
+    display: block;
+   }
+   .hamburger{
+    display: flex;
+    position: fixed;
+    z-index: 9;
+    background: #227e2e;
+    margin-top: 2rem;
+    padding: 1px; 
+  }
+
+}

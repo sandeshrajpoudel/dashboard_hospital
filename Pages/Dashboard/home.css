@@ -1,0 +1,121 @@
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+}
+.cards{
+    width: 45%;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    row-gap: .8rem ;
+    justify-content: space-between;
+
+}
+.chartSection{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: teal;
+    padding: .5rem;
+    width: 55%;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: .5rem;
+}
+.second{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: .5rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: .5rem;
+    margin-top: 1rem ;
+}
+
+
+@media screen and (max-width: 1200px){
+.cards{
+    width: 48%;
+}
+.chartSection{
+    width: 51%;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 50% 40%;
+
+}
+}
+@media screen and (max-width: 1070px){
+    .first{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        flex-direction: row;
+        height:24.5rem; 
+        width: 100%;
+    }
+   
+    .cards{
+        display: grid;
+        width: 68%;
+        height: 90%;
+        grid-template-columns: 100%;
+    }
+    .chartSection{
+        display: flex;
+        width: 99%;
+        height: 90%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        }
+        .second{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;    
+        }  
+        .table{
+            display: flex;
+            width: 78%;
+        }
+        .doctorsCard{
+            display: flex;
+        }
+}
+@media screen and (max-width: 800px){
+   .second{
+    display: flex;
+    width: 100%;  
+   }
+   .chartSection{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+   }
+   .doctorsCard{
+    display: none;
+   }
+   .table{
+    display: flex;
+    width: 100%;
+}
+   
+}
+ @media screen and (max-width: 650px){
+.dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+} 
+

@@ -1,0 +1,70 @@
+.clock{
+    display: flex;
+    width: 12rem;
+    height: 12rem;
+    background-color: rgb(115, 121, 122);
+    background-image: url(../../assets/watch.png);
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    cursor: pointer;
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+ .clock:hover{
+    scale: 1.05;
+}
+.clock>img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.inner{
+    display: flex;
+    flex-direction: column;
+    width: 7rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 39, 53);
+    color: antiquewhite;
+    border-radius: .5rem;
+    z-index: 9;
+    font-family:'digital-clock-font';
+
+}
+h2{
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    font-size: 16px;
+
+}
+
+.inner > span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+
+    justify-content: center;
+   
+}
+
+@media screen and (max-width: 900px){
+    .clock{
+        display: flex;
+        width: 9rem;
+        height: 11rem;
+    }
+}
+@media screen and (max-width: 800px){
+    .clock{
+        display: none;
+       
+    }
+}

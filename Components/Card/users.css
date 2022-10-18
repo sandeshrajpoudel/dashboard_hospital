@@ -1,0 +1,27 @@
+.userscard{
+display: flex;
+flex-direction: column;
+width: 100%;
+gap: .5rem;
+justify-content: flex-end;
+align-items: center;
+margin: 0 .5rem;
+}
+
+.heading{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.heading >span{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* @media screen and (max-width: 900px){
+   
+   
+   
+} */

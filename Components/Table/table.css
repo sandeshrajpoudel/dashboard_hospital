@@ -1,0 +1,57 @@
+.Table {
+  overflow-x: scroll;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 16rem;
+scrollbar-width: none;
+
+
+}
+
+.heading{
+  padding: .5rem;
+
+}
+table {
+  border-collapse: collapse;
+  justify-content: center;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  width: 200px!important;
+  text-align: left;
+  padding: 8px;
+
+}
+.statuscolumn{
+  display: flex;
+
+}
+
+.safe {
+  display: flex;
+  background: green;
+  border-radius: .5rem;
+  justify-content: left;
+  padding: .1rem;
+  align-items: center;
+}
+.danger {
+  display: flex;
+  background: rgb(161, 31, 31);
+  border-radius: .5rem;
+  justify-content: left;
+  align-items: center;
+  padding: .1rem;
+}
+/* @media screen and (max-width: 800px){
+ 
+} */
+
+
+
+
